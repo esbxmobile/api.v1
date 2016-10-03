@@ -23,6 +23,10 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'a' => 
+        array (
+            'api\\' => 4,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -54,6 +58,8 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'P' => 
         array (
             'Psy\\' => 4,
+            'Prettus\\Validator\\' => 18,
+            'Prettus\\Repository\\' => 19,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -82,10 +88,6 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
         ),
-        'A' => 
-        array (
-            'App\\' => 4,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -94,6 +96,10 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -175,6 +181,14 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src/Psy',
         ),
+        'Prettus\\Validator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/prettus/laravel-validation/src/Prettus/Validator',
+        ),
+        'Prettus\\Repository\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -210,10 +224,6 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
@@ -264,25 +274,6 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
     );
 
     public static $classMap = array (
-        'App\\Console\\Commands\\Inspire' => __DIR__ . '/../..' . '/app/Console/Commands/Inspire.php',
-        'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\Events\\Event' => __DIR__ . '/../..' . '/app/Events/Event.php',
-        'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
-        'App\\Http\\Controllers\\Auth\\PasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordController.php',
-        'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
-        'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
-        'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
-        'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
-        'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
-        'App\\Jobs\\Job' => __DIR__ . '/../..' . '/app/Jobs/Job.php',
-        'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
-        'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
-        'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
-        'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'ClassPreloader\\ClassList' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassList.php',
@@ -397,6 +388,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\cs_CZ\\Payment' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/cs_CZ/Payment.php',
         'Faker\\Provider\\cs_CZ\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/cs_CZ/Person.php',
         'Faker\\Provider\\cs_CZ\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/cs_CZ/PhoneNumber.php',
+        'Faker\\Provider\\cs_CZ\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/cs_CZ/Text.php',
         'Faker\\Provider\\da_DK\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/da_DK/Address.php',
         'Faker\\Provider\\da_DK\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/da_DK/Company.php',
         'Faker\\Provider\\da_DK\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/da_DK/Internet.php',
@@ -429,6 +421,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\el_GR\\Payment' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/el_GR/Payment.php',
         'Faker\\Provider\\el_GR\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/el_GR/Person.php',
         'Faker\\Provider\\el_GR\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/el_GR/PhoneNumber.php',
+        'Faker\\Provider\\el_GR\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/el_GR/Text.php',
         'Faker\\Provider\\en_AU\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/en_AU/Address.php',
         'Faker\\Provider\\en_AU\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/en_AU/Internet.php',
         'Faker\\Provider\\en_AU\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/en_AU/PhoneNumber.php',
@@ -514,6 +507,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\fr_FR\\Payment' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/fr_FR/Payment.php',
         'Faker\\Provider\\fr_FR\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/fr_FR/Person.php',
         'Faker\\Provider\\fr_FR\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/fr_FR/PhoneNumber.php',
+        'Faker\\Provider\\fr_FR\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/fr_FR/Text.php',
         'Faker\\Provider\\he_IL\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/he_IL/Address.php',
         'Faker\\Provider\\he_IL\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/he_IL/Company.php',
         'Faker\\Provider\\he_IL\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/he_IL/Person.php',
@@ -527,6 +521,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\hu_HU\\Payment' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hu_HU/Payment.php',
         'Faker\\Provider\\hu_HU\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hu_HU/Person.php',
         'Faker\\Provider\\hu_HU\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hu_HU/PhoneNumber.php',
+        'Faker\\Provider\\hu_HU\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hu_HU/Text.php',
         'Faker\\Provider\\hy_AM\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hy_AM/Address.php',
         'Faker\\Provider\\hy_AM\\Color' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hy_AM/Color.php',
         'Faker\\Provider\\hy_AM\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/hy_AM/Company.php',
@@ -571,6 +566,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\ka_GE\\Payment' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ka_GE/Payment.php',
         'Faker\\Provider\\ka_GE\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ka_GE/Person.php',
         'Faker\\Provider\\ka_GE\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ka_GE/PhoneNumber.php',
+        'Faker\\Provider\\ka_GE\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ka_GE/Text.php',
         'Faker\\Provider\\kk_KZ\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/kk_KZ/Address.php',
         'Faker\\Provider\\kk_KZ\\Color' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/kk_KZ/Color.php',
         'Faker\\Provider\\kk_KZ\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/kk_KZ/Company.php',
@@ -584,6 +580,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\ko_KR\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ko_KR/Internet.php',
         'Faker\\Provider\\ko_KR\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ko_KR/Person.php',
         'Faker\\Provider\\ko_KR\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ko_KR/PhoneNumber.php',
+        'Faker\\Provider\\ko_KR\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ko_KR/Text.php',
         'Faker\\Provider\\lt_LT\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/lt_LT/Address.php',
         'Faker\\Provider\\lt_LT\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/lt_LT/Company.php',
         'Faker\\Provider\\lt_LT\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/lt_LT/Internet.php',
@@ -657,6 +654,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\ru_RU\\Payment' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ru_RU/Payment.php',
         'Faker\\Provider\\ru_RU\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ru_RU/Person.php',
         'Faker\\Provider\\ru_RU\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ru_RU/PhoneNumber.php',
+        'Faker\\Provider\\ru_RU\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/ru_RU/Text.php',
         'Faker\\Provider\\sk_SK\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/sk_SK/Address.php',
         'Faker\\Provider\\sk_SK\\Company' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/sk_SK/Company.php',
         'Faker\\Provider\\sk_SK\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/sk_SK/Internet.php',
@@ -695,6 +693,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Faker\\Provider\\uk_UA\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/uk_UA/Internet.php',
         'Faker\\Provider\\uk_UA\\Person' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/uk_UA/Person.php',
         'Faker\\Provider\\uk_UA\\PhoneNumber' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/uk_UA/PhoneNumber.php',
+        'Faker\\Provider\\uk_UA\\Text' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/uk_UA/Text.php',
         'Faker\\Provider\\vi_VN\\Address' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/vi_VN/Address.php',
         'Faker\\Provider\\vi_VN\\Color' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/vi_VN/Color.php',
         'Faker\\Provider\\vi_VN\\Internet' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Provider/vi_VN/Internet.php',
@@ -2143,6 +2142,59 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'PhpParser\\Serializer\\XML' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Serializer/XML.php',
         'PhpParser\\Unserializer' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Unserializer.php',
         'PhpParser\\Unserializer\\XML' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Unserializer/XML.php',
+        'Prettus\\Repository\\Contracts\\CacheableInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/CacheableInterface.php',
+        'Prettus\\Repository\\Contracts\\CriteriaInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/CriteriaInterface.php',
+        'Prettus\\Repository\\Contracts\\Presentable' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/Presentable.php',
+        'Prettus\\Repository\\Contracts\\PresenterInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/PresenterInterface.php',
+        'Prettus\\Repository\\Contracts\\RepositoryCriteriaInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/RepositoryCriteriaInterface.php',
+        'Prettus\\Repository\\Contracts\\RepositoryInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/RepositoryInterface.php',
+        'Prettus\\Repository\\Contracts\\Transformable' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/Transformable.php',
+        'Prettus\\Repository\\Criteria\\RequestCriteria' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Criteria/RequestCriteria.php',
+        'Prettus\\Repository\\Eloquent\\BaseRepository' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Eloquent/BaseRepository.php',
+        'Prettus\\Repository\\Events\\RepositoryEntityCreated' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Events/RepositoryEntityCreated.php',
+        'Prettus\\Repository\\Events\\RepositoryEntityDeleted' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Events/RepositoryEntityDeleted.php',
+        'Prettus\\Repository\\Events\\RepositoryEntityUpdated' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Events/RepositoryEntityUpdated.php',
+        'Prettus\\Repository\\Events\\RepositoryEventBase' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Events/RepositoryEventBase.php',
+        'Prettus\\Repository\\Exceptions\\RepositoryException' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Exceptions/RepositoryException.php',
+        'Prettus\\Repository\\Generators\\BindingsGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/BindingsGenerator.php',
+        'Prettus\\Repository\\Generators\\Commands\\BindingsCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/BindingsCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\ControllerCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/ControllerCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\CriteriaCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/CriteriaCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\EntityCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/EntityCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\PresenterCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/PresenterCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\RepositoryCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/RepositoryCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\TransformerCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/TransformerCommand.php',
+        'Prettus\\Repository\\Generators\\Commands\\ValidatorCommand' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Commands/ValidatorCommand.php',
+        'Prettus\\Repository\\Generators\\ControllerGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/ControllerGenerator.php',
+        'Prettus\\Repository\\Generators\\CriteriaGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/CriteriaGenerator.php',
+        'Prettus\\Repository\\Generators\\FileAlreadyExistsException' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/FileAlreadyExistsException.php',
+        'Prettus\\Repository\\Generators\\Generator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Generator.php',
+        'Prettus\\Repository\\Generators\\MigrationGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/MigrationGenerator.php',
+        'Prettus\\Repository\\Generators\\Migrations\\NameParser' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Migrations/NameParser.php',
+        'Prettus\\Repository\\Generators\\Migrations\\RulesParser' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Migrations/RulesParser.php',
+        'Prettus\\Repository\\Generators\\Migrations\\SchemaParser' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Migrations/SchemaParser.php',
+        'Prettus\\Repository\\Generators\\ModelGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/ModelGenerator.php',
+        'Prettus\\Repository\\Generators\\PresenterGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/PresenterGenerator.php',
+        'Prettus\\Repository\\Generators\\RepositoryEloquentGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/RepositoryEloquentGenerator.php',
+        'Prettus\\Repository\\Generators\\RepositoryInterfaceGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/RepositoryInterfaceGenerator.php',
+        'Prettus\\Repository\\Generators\\Stub' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/Stub.php',
+        'Prettus\\Repository\\Generators\\TransformerGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/TransformerGenerator.php',
+        'Prettus\\Repository\\Generators\\ValidatorGenerator' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Generators/ValidatorGenerator.php',
+        'Prettus\\Repository\\Helpers\\CacheKeys' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Helpers/CacheKeys.php',
+        'Prettus\\Repository\\Listeners\\CleanCacheRepository' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Listeners/CleanCacheRepository.php',
+        'Prettus\\Repository\\Presenter\\FractalPresenter' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Presenter/FractalPresenter.php',
+        'Prettus\\Repository\\Presenter\\ModelFractalPresenter' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Presenter/ModelFractalPresenter.php',
+        'Prettus\\Repository\\Providers\\EventServiceProvider' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Providers/EventServiceProvider.php',
+        'Prettus\\Repository\\Providers\\LumenRepositoryServiceProvider' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Providers/LumenRepositoryServiceProvider.php',
+        'Prettus\\Repository\\Providers\\RepositoryServiceProvider' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Providers/RepositoryServiceProvider.php',
+        'Prettus\\Repository\\Traits\\CacheableRepository' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Traits/CacheableRepository.php',
+        'Prettus\\Repository\\Traits\\PresentableTrait' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Traits/PresentableTrait.php',
+        'Prettus\\Repository\\Traits\\TransformableTrait' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Traits/TransformableTrait.php',
+        'Prettus\\Repository\\Transformer\\ModelTransformer' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Transformer/ModelTransformer.php',
+        'Prettus\\Validator\\AbstractValidator' => __DIR__ . '/..' . '/prettus/laravel-validation/src/Prettus/Validator/AbstractValidator.php',
+        'Prettus\\Validator\\Contracts\\ValidatorInterface' => __DIR__ . '/..' . '/prettus/laravel-validation/src/Prettus/Validator/Contracts/ValidatorInterface.php',
+        'Prettus\\Validator\\Exceptions\\ValidatorException' => __DIR__ . '/..' . '/prettus/laravel-validation/src/Prettus/Validator/Exceptions/ValidatorException.php',
+        'Prettus\\Validator\\LaravelValidator' => __DIR__ . '/..' . '/prettus/laravel-validation/src/Prettus/Validator/LaravelValidator.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
@@ -2899,6 +2951,25 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'api\\Console\\Commands\\Inspire' => __DIR__ . '/../..' . '/app/Console/Commands/Inspire.php',
+        'api\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'api\\Events\\Event' => __DIR__ . '/../..' . '/app/Events/Event.php',
+        'api\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'api\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
+        'api\\Http\\Controllers\\Auth\\PasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordController.php',
+        'api\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'api\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'api\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
+        'api\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'api\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
+        'api\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'api\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
+        'api\\Jobs\\Job' => __DIR__ . '/../..' . '/app/Jobs/Job.php',
+        'api\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'api\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
+        'api\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+        'api\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'api\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',

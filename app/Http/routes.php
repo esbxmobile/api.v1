@@ -1,23 +1,20 @@
 <?php
 
-/* teste com controller */
 
+//agrupamento de rotas protegidas por OAuth2
+Route::group(['prefix'=>'api', 'middleware'=>'oauth', 'as'=>'api.'], function (){
+
+});
+
+
+/* teste com controller */
 Route::get('/getallboxes', 'SearchBoxesController@getAllBoxes');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Teste access_token com refresh_token */
+Route::post('access_token', function (){
+    return Response::json(Authorizer::issueAccessToken());
+});
 
 /* testes postman */
 Route::get('/userteste', function (\Api\Repositories\UserRepository $userRepository){
@@ -49,3 +46,5 @@ Route::get('/finduservehicle:{id}', function (\Api\Repositories\UserRepository $
 
     return $vehicle;
 });
+
+

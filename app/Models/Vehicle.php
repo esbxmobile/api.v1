@@ -10,7 +10,13 @@ class Vehicle extends Model implements Transformable
 {
     use TransformableTrait;
 
-    protected $fillable = [];
+    protected $fillable = [
+        'id',
+        'color',
+        'license',
+        'size',
+        'type'
+    ];
 
     public function user(){
         return $this->belongsTo(User::class);

@@ -2,6 +2,7 @@
 
 use Api\Models\Box;
 use Api\Models\User;
+use Api\Models\Vehicle;
 
 $factory->define(User::class, function (Faker\Generator $faker) {
     return [
@@ -40,4 +41,14 @@ $factory->define(Box::class, function (Faker\Generator $faker){
     ];
 });
 
+
+$factory->define(Vehicle::class, function (Faker\Generator $faker){
+    return array(
+        'model' => $faker->word,
+        'color' => $faker->safeColorName,
+        'license' => $faker->unique()->word,
+        'size' => $faker->randomElement(['s','m','b']),
+        'type' => $faker->randomElement(['car','motorcycle'])
+    );
+});
 

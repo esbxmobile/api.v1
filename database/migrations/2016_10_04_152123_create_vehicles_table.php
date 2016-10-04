@@ -18,8 +18,9 @@ class CreateVehiclesTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('model');
             $table->string('color');
-            $table->string('license');
+            $table->string('license')->unique();
             $table->char('size',3)->default('s');
+            $table->string('type');
             $table->timestamps();
 
             $table->foreign('user_id')

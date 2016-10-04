@@ -1,5 +1,24 @@
 <?php
 
+/* teste com controller */
+
+Route::get('/getallboxes', 'SearchBoxesController@getAllBoxes');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* testes postman */
 Route::get('/userteste', function (\Api\Repositories\UserRepository $userRepository){
     $users = $userRepository->all();
@@ -20,8 +39,13 @@ Route::get('/finduser:{id}', function (\Api\Repositories\UserRepository $userRep
 });
 
 Route::get('/finduserbox:{id}', function (\Api\Repositories\UserRepository $userRepository, $id){
-    $user = $userRepository->find($id)->box;
+    $box = $userRepository->find($id)->box;
 
-    return $user;
+    return $box;
 });
 
+Route::get('/finduservehicle:{id}', function (\Api\Repositories\UserRepository $userRepository, $id){
+    $vehicle = $userRepository->find($id)->vehicle;
+
+    return $vehicle;
+});

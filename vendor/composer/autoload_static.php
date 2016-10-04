@@ -787,6 +787,7 @@ class ComposerStaticInitdd49d72b62e404392cfbaffe737c57bc
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
+        'VehicleTableSeeder' => __DIR__ . '/../..' . '/database/seeds/VehicleTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -2,6 +2,7 @@
 
 use Api\Models\Box;
 use Api\Models\User;
+use Api\Models\Vehicle;
 use Illuminate\Database\Seeder;
 
 /**
@@ -21,7 +22,7 @@ class UsersTableSeeder extends Seeder
             'remember_token' => str_random(10),
             'birthday' => '11/11/1111',
             'role' => 'renter'
-        ]);
+        ])->vehicle()->save(factory(Vehicle::class)->make());
 
         factory(User::class)->create([
             'name' => 'driver',
@@ -34,8 +35,12 @@ class UsersTableSeeder extends Seeder
             'type_license' => 'B'
         ])->box()->save(factory(Box::class)->make());
 
-        factory(User::class, 10)->create()->each(function ($user){
+        factory(User::class, 5)->create()->each(function ($user){
             $user->box()->save(factory(Box::class)->make());
+        });
+
+        factory(User::class, 5)->create()->each(function ($user){
+            $user->vehicle()->save(factory(Vehicle::class)->make());
         });
 
         factory(User::class, 5)->create([

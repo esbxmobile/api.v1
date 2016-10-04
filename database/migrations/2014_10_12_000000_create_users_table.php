@@ -17,8 +17,16 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('phone')->nullable();
+            $table->string('phone_alt')->nullable();
+            $table->string('birthday');
+            $table->string('role')->default('renter'); //renter or advertiser
+            $table->string('license')->unique()->nullable();
+            $table->string('type_license')->nullable();
             $table->rememberToken();
             $table->timestamps();
+
+            $table->index('id');
         });
     }
 

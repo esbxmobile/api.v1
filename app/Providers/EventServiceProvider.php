@@ -1,6 +1,6 @@
 <?php
 
-namespace api\Providers;
+namespace Api\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'api\Events\SomeEvent' => [
-            'api\Listeners\EventListener',
+        'Api\Events\SomeEvent' => [
+            'Api\Listeners\EventListener',
         ],
     ];
 
